@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:007@001al@localhost:3306/trydb"
+  url      = "mysql://root:pwdbootcamp123@adminer2.purwadhikabootcamp.com:3306/trydb"
 }
 
 model Sample {
