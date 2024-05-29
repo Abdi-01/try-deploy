@@ -40,5 +40,5 @@ jobs:
           script: |
             cd ${{ secrets.SSH_FOLDER }}
             npm install
-            npm run migrate
+            npx prisma migrate dev --schema=./apps/api/prisma/schema.prisma
             pm2 start deploy.config.js
