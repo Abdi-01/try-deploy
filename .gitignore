@@ -36,5 +36,5 @@ yarn-error.log*
 .vercel
 
 # others
-dist
+# dist
 trial-error
