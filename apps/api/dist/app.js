@@ -29,7 +29,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const config_1 = require("./config");
-const sample_router_1 = require("./routers/sample.router");
 class App {
     constructor() {
         this.app = (0, express_1.default)();
@@ -64,11 +63,9 @@ class App {
         });
     }
     routes() {
-        const sampleRouter = new sample_router_1.SampleRouter();
-        this.app.get('/api', (req, res) => {
+        this.app.get('/', (req, res) => {
             res.send(`Hello, Purwadhika Student !`);
         });
-        this.app.use('/api/samples', sampleRouter.getRouter());
     }
     start() {
         this.app.listen(config_1.PORT, () => {

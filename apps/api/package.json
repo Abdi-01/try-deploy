@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma": "npx prisma",
     "postinstall": "prisma generate",
-    "start": "node dist/index.js"
+    "start": "ts-node src/index.ts"
   },
   "author": "",
   "license": "ISC",
