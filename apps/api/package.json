@@ -9,7 +9,8 @@
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prisma": "npx prisma",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
